@@ -35,6 +35,7 @@
   <a href="page2_ap.php" class="btn btn-primary">List of Appointments</a>
 </div>
 <br> <br>
+
  <?php
 require_once('connection.php'); 
 $sql = "SELECT * FROM patientdetails";
@@ -89,7 +90,7 @@ echo "<table class='table table-hover' id='apt_details'>
 	echo "NO DATA FOUND:(";
 }
 
-$conn->close();
+mysqli_close($conn);
 ?>
  
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" id="formclear">
