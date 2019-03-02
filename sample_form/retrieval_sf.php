@@ -86,7 +86,7 @@ echo "<table border='1'>
 	echo "NO DATA FOUND:(";
 }
 
-$conn->close();
+mysqli_close($conn);
 ?>
 
 <br><br><br>
