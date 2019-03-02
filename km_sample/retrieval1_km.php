@@ -3,8 +3,7 @@
 require_once('connection.php'); 
 
 $sql = "SELECT * FROM personaldetails";
-$res = $conn->query($sql);
-
+$res = mysqli_query($conn,$sql);
 if($res -> num_rows > 0) {
 echo "<table border='1'>
 <tr>
@@ -36,6 +35,6 @@ echo "<table border='1'>
   echo "NO DATA FOUND:(";
 }
 
-$conn->close();
+mysqli_close($conn);
 ?>
 
