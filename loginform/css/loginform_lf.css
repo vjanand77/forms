@@ -1,0 +1,35 @@
+ol {
+		list-style: none;
+	}
+button, #lin {
+	float: right;
+}
+#fname, #sname, #dob, #mail_id, #address,
+#phone, #password, #conf_password, #mail, #time_apt, #time_apf, #date_ap 
+{
+	width: 250px;
+}
+
+.hd , .ft {
+		/*margin : 100px;*/
+		background-color: #e5ffcc;
+		border-style: hidden;
+		padding: 5px;
+}
+	#h {
+		text-align: center;
+	}
+	.container {
+		line-height: 2;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		margin-left: 570px;
+		margin-right: 500px;
+	}
+
+	.base {
+		text-align: center;
+	}
+	.error {
+		color: red;
+	}
